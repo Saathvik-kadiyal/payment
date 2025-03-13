@@ -6,10 +6,11 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(cors({
-  origin: "https://payment-2sheh9jgm-saathvik-kadiyals-projects.vercel.app",
-  methods: "GET,POST,PUT,DELETE",
+  origin: "*",
+  methods: "GET,POST,PUT,DELETE,OPTIONS",
   allowedHeaders: "Content-Type,Authorization"
 }));
+
 app.use(express.json())
 
 
