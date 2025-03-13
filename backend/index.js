@@ -12,8 +12,13 @@ app.use(cors({
 app.use(express.json())
 
 
+
 app.use('/api/v1',rootRouter)
 
+
+app.get("/", (req, res) => {
+    res.send("Server is running 🚀"); // Check if this works
+  });
 
 
 
