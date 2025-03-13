@@ -21,7 +21,7 @@ const SendMoney = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/v1/account/transfer", {
+      const response = await fetch("https://payment-xi-five.vercel.app/api/v1/account/transfer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

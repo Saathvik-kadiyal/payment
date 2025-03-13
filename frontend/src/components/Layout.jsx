@@ -14,7 +14,7 @@ const Layout = () => {
 
     const fetchUser = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/v1/user/details", {
+        const response = await fetch("https://payment-xi-five.vercel.app/api/v1/user/details", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const Layout = () => {
   // Fetch balance separately (only when needed)
   const fetchBalance = useCallback(async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/v1/account/balance", {
+      const response = await fetch("https://payment-xi-five.vercel.app/api/v1/account/balance", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
