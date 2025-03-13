@@ -21,7 +21,7 @@ const SendMoney = () => {
     }
 
     try {
-      const response = await fetch("https://payment-f9b1.vercel.app/api/v1/account/transfer", {
+      const response = await fetch("https://payment-backend-rgrx.onrender.com/api/v1/account/transfer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
