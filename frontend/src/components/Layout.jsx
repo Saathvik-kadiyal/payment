@@ -43,7 +43,7 @@ const Layout = () => {
   // Fetch balance separately (only when needed)
   const fetchBalance = useCallback(async () => {
     try {
-      const response = await fetch("https://payment-backend-rgrx.onrender.com/pi/v1/account/balance", {
+      const response = await fetch("https://payment-backend-rgrx.onrender.com/api/v1/account/balance", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
