@@ -5,7 +5,11 @@ const rootRouter = require('./routes/index.js')
 const PORT = process.env.PORT || 3000;
 
 const app = express();
-app.use(cors())
+app.use(cors({
+  origin: "https://payment-2sheh9jgm-saathvik-kadiyals-projects.vercel.app",
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type,Authorization"
+}));
 app.use(express.json())
 
 
