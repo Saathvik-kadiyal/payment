@@ -10,7 +10,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUsersAndBalance = async () => {
       try {
-        const response = await fetch("https://server-three-gamma-87.vercel.app/api/v1/user/users", {
+        const response = await fetch("https://payment-f9b1.vercel.app/api/v1/user/users", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

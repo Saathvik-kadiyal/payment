@@ -14,7 +14,7 @@ const Update = () => {
     setMessage({ text: "", type: "" });
 
     try {
-      const response = await fetch("https://server-three-gamma-87.vercel.app/api/v1/user/update", {
+      const response = await fetch("https://payment-f9b1.vercel.app/api/v1/user/update", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

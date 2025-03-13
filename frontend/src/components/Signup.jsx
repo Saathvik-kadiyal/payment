@@ -25,7 +25,7 @@ const Signup = () => {
     setLoading(true);
     setError("");
     try {
-      const response = await fetch("https://server-three-gamma-87.vercel.app/api/v1/user/signup", {
+      const response = await fetch("https://payment-f9b1.vercel.app/api/v1/user/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
